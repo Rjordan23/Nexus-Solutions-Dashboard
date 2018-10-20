@@ -55,7 +55,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10">
-            <h1><span><i class="fas fa-wrench"></i></span> EWS <small>Human Resources</small></h1>
+            <h1><span><i class="fas fa-wrench"></i></span> Client Portal <small>Human Resources</small></h1>
           </div>
           <div class="col-md-2">
               <div class="dropdown create">
@@ -77,7 +77,7 @@
     <section id="breadcrumb">
       <div class="container">
         <ol class="breadcrumb">
-          <li class="active">Dashboard Home</li>
+          <li class="active">Home</li>
         </ol>
       </div>
     </section>
@@ -113,7 +113,7 @@
               </div>
 
               <!-- Usage Stats -->
-              <div class="card p-2 mt-3 shadow">
+              <div class="card p-2 my-3 shadow">
                 <h4>Inbox Used</h4>
                 <div class="progress">
                   <div class="progress-bar bg-warning" role="progressbar" style="width: 72%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">72%</div>
@@ -125,15 +125,16 @@
               </div>
           </div>
 
-          <!-- Site Overview -->
+          <!-- ///// Site Overview ///// -->
           <div class="col-md-9">
-            <!-- Hiring -->
+            <!-- //// Hiring //// -->
             <div class="card text-center shadow">
               <div class="card-header bg-info text-white text-left">
                 Express Web Systems HR Overview <span class="float-right" id="today"></span>
               </div>
               <div class="card-body row">
-                <div class="col-md-3">
+                <!-- New Hires -->
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-md-2 col-sm-6 mb-sm-2 col-12 mb-2">
                   <div class="card text-center py-3 shadow-sm">
                     <div class="mb-2">
                       <h5 class="card-title m-0">New Hires</h5>
@@ -142,16 +143,18 @@
                     <h2 class="text-success"><span><i class="fas fa-user-plus"></i></span> 6</h2>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <!-- Transfers -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-2">
                   <div class="card text-center py-3 shadow-sm">
                     <div class="mb-2">
-                      <h5 class="card-title m-0">Transers</h5>
+                      <h5 class="card-title m-0">Transfers</h5>
                       <small class="text-secondary">LAST 90 DAYS</small>
                     </div>
                     <h2 class="text-warning"><span><i class="fas fa-user-edit"></i></span> 10</h2>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <!-- Terminations -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-2">
                   <div class="card text-center py-3 shadow-sm">
                     <div class="mb-2">
                       <h5 class="card-title m-0">Terminations</h5>
@@ -160,7 +163,8 @@
                     <h2 class="text-danger"><span><i class="fas fa-user-times"></i></span> 4</h2>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <!-- Open Reqs -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-2">
                   <div class="card text-center py-3 shadow-sm">
                     <div class="mb-2">
                       <h5 class="card-title m-0">Open Reqs</h5>
@@ -172,22 +176,22 @@
               </div>
             </div>
 
-            <!-- Stats -->
+            <!-- //// Employee Stats //// -->
             <div class="card shadow mt-3">
               <div class="card-header bg-info text-white">Employee Statistics</div>
-              <div class="container-fluid">
-                <div class="card-body px-0 row justify-content-center">
+              <div class="container">
+                <div class="card-body px-2 row justify-content-center">
                     <!-- Gender -->
                     <div class="card col-lg-3 col-md-12 py-2">
                       <h6 class="card-title text-center">Employee Structure</h6>
                       <div class="row">
                         <!-- Male -->
-                        <div class="col-md-6 col-sm-4 text-center">
+                        <div class="col-md-6 col-sm-6 col-6 text-center">
                           <p class="m-1">59%</p>
                           <i class="fas fa-male fa-6x"></i>
                         </div>
                         <!-- Female -->
-                        <div class="col-md-6 col-sm-4 text-center">
+                        <div class="col-md-6 col-sm-6 col-6 text-center">
                             <p class="m-1">41%</p>
                             <i class="fas fa-female fa-6x"></i>
                         </div>
@@ -202,63 +206,68 @@
                         <p class="border-bottom pb-1">Performace Review Annual <span class="badge badge-pill badge-info float-right">206</span></p>
                       </div>
                     </div>
+                    <!-- Graph -->
                     <div class="card col-lg-3 col-md-5 col-sm-12 p-0">
                       <img id="graph" src="images/assets/pie-chart.png" alt="">
                     </div>
                   </div>
-                </div>
+              </div>
             </div>
 
-            <!-- Recent Users  -->
-            <div class="card my-3 shadow">
-                <div class="card-header bg-info text-white">Recent Users</div>
-                <div class="card-body">
-                  <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th scope="col">ID</th>
-                          <th scope="col">Name</th>
-                          <th scope="col">Email</th>
-                          <th scope="col">Department</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/men/14.jpg" alt=""></th>
-                          <td class="align-middle">Mark Jackson</td>
-                          <td class="align-middle"><a href="#">mark.jackson@ews.com</a></td>
-                          <td class="align-middle">Sales</td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><img class="user-img-sm"  src="https://randomuser.me/api/portraits/men/91.jpg" alt=""></th>
-                          <td class="align-middle">Jacob Thornton</td>
-                          <td class="align-middle"><a href="#">jacob.thornton1@ews.com</a></td>
-                          <td class="align-middle">Accounting</td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt=""></th>
-                          <td class="align-middle">Mika Clark</td>
-                          <td class="align-middle"><a href="#">mika.clark@ews.com</a></td>
-                          <td class="align-middle">Accounting</td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/men/58.jpg" alt=""></th>
-                          <td class="align-middle">Ty Lang</td>
-                          <td class="align-middle"><a href="#">ty.lang@ews.com</a></td>
-                          <td class="align-middle">Marketing</td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/women/36.jpg" alt=""></th>
-                          <td class="align-middle">Lisa Mitchell</td>
-                          <td class="align-middle"><a href="#">lisa.mitchell@ews.com</a></td>
-                          <td class="align-middle">Marketing</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                </div>
-              </div>
+           
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- //// Recent Users ////  -->
+    <section class="container">
+       <div class="card my-3 col-lg-8 shadow p-0">
+          <div class="card-header bg-info text-white">Recent Users</div>
+          <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <!-- <th scope="col">Department</th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/men/14.jpg" alt=""></th>
+                    <td class="align-middle">Mark Jackson</td>
+                    <td class="align-middle"><a href="#">mark.jackson@ews.com</a></td>
+                    <!-- <td class="align-middle">Sales</td> -->
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="user-img-sm"  src="https://randomuser.me/api/portraits/men/91.jpg" alt=""></th>
+                    <td class="align-middle">Jacob Thornton</td>
+                    <td class="align-middle"><a href="#">jacob.thornton1@ews.com</a></td>
+                    <!-- <td class="align-middle">Accounting</td> -->
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt=""></th>
+                    <td class="align-middle">Mika Clark</td>
+                    <td class="align-middle"><a href="#">mika.clark@ews.com</a></td>
+                    <!-- <td class="align-middle">Accounting</td> -->
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/men/58.jpg" alt=""></th>
+                    <td class="align-middle">Ty Lang</td>
+                    <td class="align-middle"><a href="#">ty.lang@ews.com</a></td>
+                    <!-- <td class="align-middle">Marketing</td> -->
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/women/36.jpg" alt=""></th>
+                    <td class="align-middle">Lisa Mitchell</td>
+                    <td class="align-middle"><a href="#">lisa.mitchell@ews.com</a></td>
+                    <!-- <td class="align-middle">Marketing</td> -->
+                  </tr>
+                </tbody>
+              </table>
+          </div>
       </div>
     </section>
 
