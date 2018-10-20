@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>N-Exx Dashboard | EWS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+        <a class="navbar-brand" href="#">N-Exx Cloud <i class="fab fa-cloudversify"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tasks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Sandbox</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Users</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Add</a>
+                <a class="dropdown-item" href="#">Delete</a>
+                <a class="dropdown-item" href="#">Edit Permissons</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" href="#"></a>
+            </li> -->
+            <li class="nav-item">
+                <i class="fas fa-cog nav-link pb-0 pt-2 mt-1"></i>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="client-portal.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1><span><i class="fas fa-wrench"></i></span> EWS <small>Human Resources</small></h1>
+          </div>
+          <div class="col-md-2">
+              <div class="dropdown create">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Create Content
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" data-toggle="modal" data-target="#addPage" href="#">Add Page</a>
+                  <a class="dropdown-item" href="#">Add Post</a>
+                  <a class="dropdown-item" href="#">Remove Page / Post</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section id="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="active">Dashboard Home</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- -->
+    <section class="main">
+      <div class="container">
+        <div class="row">
+
+          <!-- Left Aside -->
+          <div class="col-md-3">
+              <div class="card mb-3 shadow">
+                  <div class="card-header bg-info text-white">Welcome Stacie</div>
+                  <img class="card-img" src="https://d3iw72m71ie81c.cloudfront.net/female-83.jpg" alt="">
+                  <div class="card-footer">
+                    <div class="row text-center">
+                        <a class="col-4 text-dark border-right" href="#"><i class="far fa-envelope-open"></i></a>
+                        <a class="col-4 text-dark border-right" href="#"><i class="far fa-calendar-alt"></i></a>
+                        <a class="col-4 text-dark" href="#"><i class="fas fa-sitemap"></i></a>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- HRM Options  -->
+              <div class="list-group shadow">
+                <a href="index.html" class="list-group-item list-group-item-action active bg-info border-info">
+                  <i class="fas fa-users"></i> HRM
+                </a>
+                <a href="pages.html" class="list-group-item list-group-item-action"><i class="far fa-file-alt"></i> Pages <span class="badge badge-pill badge-secondary float-right">12</span></a>
+                <a href="post.html" class="list-group-item list-group-item-action"><i class="fas fa-pencil-alt"></i> Post <span class="badge badge-pill badge-secondary float-right">71</span></a>
+                <a href="users.html" class="list-group-item list-group-item-action"><i class="fas fa-user"></i> Users <span class="badge badge-pill badge-secondary float-right">345</span></a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Lorem</a>
+              </div>
+
+              <!-- Usage Stats -->
+              <div class="card p-2 mt-3 shadow">
+                <h4>Inbox Used</h4>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 72%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">72%</div>
+                </div>
+                <h4>Storage Used</h4>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+                </div>
+              </div>
+          </div>
+
+          <!-- Site Overview -->
+          <div class="col-md-9">
+            <!-- Hiring -->
+            <div class="card text-center shadow">
+              <div class="card-header bg-info text-white text-left">
+                Express Web Systems HR Overview <span class="float-right" id="today"></span>
+              </div>
+              <div class="card-body row">
+                <div class="col-md-3">
+                  <div class="card text-center py-3 shadow-sm">
+                    <div class="mb-2">
+                      <h5 class="card-title m-0">New Hires</h5>
+                      <small class="text-secondary">LAST 30 DAYS</small>
+                    </div>
+                    <h2 class="text-success"><span><i class="fas fa-user-plus"></i></span> 6</h2>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center py-3 shadow-sm">
+                    <div class="mb-2">
+                      <h5 class="card-title m-0">Transers</h5>
+                      <small class="text-secondary">LAST 90 DAYS</small>
+                    </div>
+                    <h2 class="text-warning"><span><i class="fas fa-user-edit"></i></span> 10</h2>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center py-3 shadow-sm">
+                    <div class="mb-2">
+                      <h5 class="card-title m-0">Terminations</h5>
+                      <small class="text-secondary">LAST 30 DAYS</small>
+                    </div>
+                    <h2 class="text-danger"><span><i class="fas fa-user-times"></i></span> 4</h2>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center py-3 shadow-sm">
+                    <div class="mb-2">
+                      <h5 class="card-title m-0">Open Reqs</h5>
+                      <small class="text-secondary">LAST 30 DAYS</small>
+                    </div>
+                    <h3><span><i class="fas fa-door-open"></i></span> 22</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="card shadow mt-3">
+              <div class="card-header bg-info text-white">Employee Statistics</div>
+              <div class="container-fluid">
+                <div class="card-body px-0 row justify-content-center">
+                    <!-- Gender -->
+                    <div class="card col-lg-3 col-md-12 py-2">
+                      <h6 class="card-title text-center">Employee Structure</h6>
+                      <div class="row">
+                        <!-- Male -->
+                        <div class="col-md-6 col-sm-4 text-center">
+                          <p class="m-1">59%</p>
+                          <i class="fas fa-male fa-6x"></i>
+                        </div>
+                        <!-- Female -->
+                        <div class="col-md-6 col-sm-4 text-center">
+                            <p class="m-1">41%</p>
+                            <i class="fas fa-female fa-6x"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Reviews -->
+                    <div class="card col-lg-5 col-md-7 col-sm-12 mx-lg-2 mx-sm-0 pt-3">
+                      <div class="">
+                        <p class="border-bottom pb-1">Performace Review 90-Day <span class="badge badge-pill badge-info float-right">9</span></p>
+                        <p class="border-bottom pb-1">Performace Review 90-Day <span class="badge badge-pill badge-info float-right">9</span></p>
+                        <p class="border-bottom pb-1">Performace Review 180-Day <span class="badge badge-pill badge-info float-right">25</span></p>
+                        <p class="border-bottom pb-1">Performace Review Annual <span class="badge badge-pill badge-info float-right">206</span></p>
+                      </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-sm-12 p-0">
+                      <img id="graph" src="images/assets/pie-chart.png" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Recent Users  -->
+            <div class="card my-3 shadow">
+                <div class="card-header bg-info text-white">Recent Users</div>
+                <div class="card-body">
+                  <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Department</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/men/14.jpg" alt=""></th>
+                          <td class="align-middle">Mark Jackson</td>
+                          <td class="align-middle"><a href="#">mark.jackson@ews.com</a></td>
+                          <td class="align-middle">Sales</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><img class="user-img-sm"  src="https://randomuser.me/api/portraits/men/91.jpg" alt=""></th>
+                          <td class="align-middle">Jacob Thornton</td>
+                          <td class="align-middle"><a href="#">jacob.thornton1@ews.com</a></td>
+                          <td class="align-middle">Accounting</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/women/81.jpg" alt=""></th>
+                          <td class="align-middle">Mika Clark</td>
+                          <td class="align-middle"><a href="#">mika.clark@ews.com</a></td>
+                          <td class="align-middle">Accounting</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/men/58.jpg" alt=""></th>
+                          <td class="align-middle">Ty Lang</td>
+                          <td class="align-middle"><a href="#">ty.lang@ews.com</a></td>
+                          <td class="align-middle">Marketing</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><img class="user-img-sm" src="https://randomuser.me/api/portraits/women/36.jpg" alt=""></th>
+                          <td class="align-middle">Lisa Mitchell</td>
+                          <td class="align-middle"><a href="#">lisa.mitchell@ews.com</a></td>
+                          <td class="align-middle">Marketing</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Add Page Modal -->
+    <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form action="#">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Page</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="#">Page Title</label>
+              <input type="text" class="form-control" placeholder="Page Title">
+            </div>
+            <div class="form-group">
+              <label for="#">Page Body</label>
+              <textarea name="editor1" class="form-control"></textarea>
+            </div>
+            <div class="checkbox">
+              <label for="#">
+                <input type="checkbox" name="#" id=""> Published
+              </label>
+            </div>
+            <div class="for-group">
+              <label for="#">Meta Tags</label>
+              <input type="text" class="form-control" placeholder="Seperate Tags with commas">
+            </div>
+            <div class="form-group">
+              <label for="#">Meta Description</label>
+              <input type="text" class="form-control" placeholder="Add Description">
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-info">Save changes</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- //// Mobile Footer //// -->
+    <div id="mobile-footer" class="d-lg-none d-md-block d-sm-block d-block">
+        <!-- //// Company News Footer for small screens //// -->
+        <nav class="navbar navbar-light amber lighten-4 py-1 bg-light pt-4 px-4 pb-2">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#"><h6 class="text-info mb-0">Company News</h6></a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent1" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse row" id="footerContent1">
+              <!-- Links -->
+              <ul class="navbar-nav mr-auto px-3 col-6">
+                  <li class="nav-item"><a class="nav-link text-dark" href="#">Newsroom</a></li>
+                  <li class="nav-item"><a class="nav-link text-dark" href="#">Events</a></li>
+                  <li class="nav-item"><a class="nav-link text-dark" href="#">Product Announcements</a></li>
+                  <li class="nav-item"><a class="nav-link text-dark" href="#">Extra</a></li>
+              </ul>
+              <div class="col-6 text-center">
+                  <img id="new-img" src="images/assets/globe.png" alt="">
+              </div>
+            </div>
+        </nav>
+
+        <!-- //// Solutions Footer for small screens //// -->
+        <nav class="navbar navbar-light amber lighten-4 py-1 bg-light py-3 px-4">
+            <!-- Navbar brand -->
+            <a class=" navbar-brand " href="#"><h6 class="text-info mb-0">Solutions</h6></a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent2" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse row" id="footerContent2">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto px-3 col-6">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">User Onboarding</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">App Onboarding</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Mobile Tooltips</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">App Personalization</a></li>
+                </ul>
+                <!-- IMG -->
+                <div class="col-6 text-center">
+                    <img id="solutions-img" src="images/assets/Snap-surveys-solutions.png" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <!-- //// Support Footer for small screens //// -->
+        <nav class="navbar navbar-light amber lighten-4 py-1 bg-light pb-0 px-4">
+            <!-- Navbar brand -->
+            <a class=" navbar-brand " href="#"><h6 class="text-info mb-0">Downloads <span id="remove-me">and Trials</span></h6></a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler bg-info float-right mr-2" type="button" data-toggle="collapse" data-target="#footerContent3" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div><i class="fas fa-plus text-white"></i></button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse row" id="footerContent3">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto px-3 col-6">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">User Onboarding</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">App Onboarding</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Mobile Tooltips</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">App Personalization</a></li>
+                </ul>
+                <div class="col-6 text-center">
+                    <img id="trials-img" src="images/assets/download-icon.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <!-- Company Address and Social Media -->
+        <div class="container-fluid row bg-light py-4 m-0">
+            <div id="sm-address" class="col-md-6 col-sm-6 col-6 px-2 ">
+                <p class="mb-0 h3"><span class="text-info">Nexus</span> Solutions</p>
+                <ul class="list-unstyled mb-2">
+                    <li>604 State St</li>
+                    <li>Morrisville, NC 27560</li>
+                </ul>
+            </div>
+              <!-- Social media icons -->
+              <div id="sm-social-list" class="text-info col-md-6 col-sm-6 col-6 px-0">
+                <ul class="list-inline text-center py-4 m-0">
+                    <li class="list-inline-item"><i class="fab fa-facebook-f fa-2x"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-twitter fa-2x"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-linkedin-in fa-2x"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-youtube fa-2x"></i></li>
+                </ul>
+            </div>            
+        </div>
+        <h6 class="text-center bg-light m-0 text-muted">&copy; Jordan Web Services LLC 2018</h6>
+    </div>
+    
+    <!--Large Screen footer of course -->
+    <footer class="container-fluid bg-light pt-4 px-5 border-top d-lg-block d-md-none d-sm-none d-none">
+        <div class="row text-center">
+                
+    <!-- Company Info -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center mb-3">
+        <p class="mb-1 h3"><span class="text-info">Nexus</span> Solutions</p>
+        <ul class="list-unstyled mb-2">
+            <li>604 State St</li>
+            <li>Morrisville, NC 27560</li>
+        </ul>
+        <!-- Social media icons -->
+        <div class="text-info">
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
+                <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                <li class="list-inline-item"><i class="fab fa-linkedin-in"></i></li>
+                <li class="list-inline-item"><i class="fab fa-youtube"></i></li>
+            </ul>                        
+        </div>
+    </div>
+            
+    <!-- left col -->
+    <div class="col-lg-3 col-md-2 col-sm-6 col-6 mt-lg-0 mt-md-0 mt-3">
+        <h6 class="mb-1">COMPANY</h6>
+        <ul class="list-unstyled text-small">
+            <li><a href="#" class="text-muted">Newsroom</a></li>
+            <li><a href="#" class="text-muted">Events</a></li>
+            <li><a href="#" class="text-muted">News</a></li>
+            <li><a href="#" class="text-muted">Extras</a></li>
+        </ul>
+    </div>
+
+    <!-- center col -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+        <h6 class="mb-1">SOLUTIONS</h6>
+        <ul class="list-unstyled text-small">
+            <li><a href="#" class="text-muted">Integrations</a></li>                      
+            <li><a href="#" class="text-muted">User Onboarding</a></li>
+            <li><a href="#" class="text-muted">App Onboarding</a></li>                        
+            <li><a href="#" class="text-muted">Mobile Tooltips</a></li>
+            <li><a href="#" class="text-muted">App Personalization</a></li>
+        </ul>
+    </div>
+            
+        <!-- right col -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <h6 class="mb-1">SUPPORT</h6>
+            <ul class="list-unstyled text-small">
+                <li><a href="#" class="text-muted">Product Demo</a></li>
+                <li><a href="#" class="text-muted"> Product Success</a></li>
+                <li><a href="#" class="text-muted">Product Success</a></li>
+                <li><a href="#" class="text-muted">Product Engagement</a></li>                   
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center mt-3 text-dark">
+        <p class="m-0">&copy; 2018 Ramsey Jordan</p>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script> -->
+
+
+  <!-- <script>
+			CKEDITOR.replace( 'editor1' );
+	</script> -->
+</body>
+</html>

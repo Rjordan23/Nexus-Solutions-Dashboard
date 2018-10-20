@@ -1,0 +1,63 @@
+body {
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+  padding-top: 6px !important;
+  padding-bottom: 0 !important;
+}
+
+
+#admin-image {
+  border-radius: 50%;
+  width: 35px;
+}
+
+/* Header */
+#header {
+  background: #333;
+  color: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+#header p small {
+  color: #666;
+}
+
+#header .create {
+  padding-top: 7px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: #ccc;
+  color: 333;
+}
+
+.breakcrumb a {
+  color: 333;
+}
+
+/* Stats */
+#graph {
+  /* background-image: url('../images/assets/pie-chart.png'); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  width: 100%;
+  height:100%;
+}
+
+/* Recent Users */
+.user-img-sm {
+  width: 53px;
+  border-radius: 50%;
+}
