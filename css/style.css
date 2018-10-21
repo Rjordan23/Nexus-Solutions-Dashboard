@@ -77,9 +77,30 @@ body {
   border-radius: 50%;
 }
 
-@media (max-width:767px) {
-  .img-md {
-    width: 88px;
-    margin: 0 10px;
-  }
+/* //// Footer //// */
+#new-img {
+  width: 30%;
+}
+
+#solutions-img {
+  width: 30%;
+}
+
+#trials-img {
+  width: 30%;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 566px) {
+/* //// Footer //// */
+#new-img {
+   width: 50%;
+}
+
+#solutions-img {
+   width: 50%;
+}
+
+#trials-img {
+   width: 50%;
+}
 }
