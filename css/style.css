@@ -19,7 +19,6 @@ body {
   padding-bottom: 0 !important;
 }
 
-
 #admin-image {
   border-radius: 50%;
   width: 35px;
@@ -42,33 +41,9 @@ body {
   padding-top: 7px;
 }
 
-/* Breadcrumb */
-.breadcrumb {
-  background: #ccc;
-  color: 333;
-}
-
-.breakcrumb a {
-  color: 333;
-}
-
 /* Stats */
-.fa-male {
-  color: navy;
-}
-
-.fa-female {
-  color: palevioletred;
-}
-
-#graph {
+.graph {
   width: 100%;
-  margin: auto auto;
-}
-
-#line-graph {
-  width: 100%;
-  margin: auto auto;
 }
 
 /* Recent Users */
